@@ -10,16 +10,34 @@
 
 <body>
   <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
   </div>
 
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .item1, .item4{
+      height: 60px;
+      grid-column: span 4;
+    }
+
+    .item2{
+      grid-column: span 1;
+    }
+
+    .item3{
+      grid-column: span 3;
+    }
+
+    .item2, .item3 {
+    height: 65vh;
     }
   </style>
 </body>

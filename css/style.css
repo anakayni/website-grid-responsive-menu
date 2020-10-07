@@ -34,13 +34,9 @@ html {
 }
 
 body {
-  /*background-image: url("./images/topography.svg"),
-    linear-gradient(110deg, #f93d66, #6d47d9);*/
   background: #422973;
   background-size: 340px, auto;
   min-height: calc(100vh - 100px);
-  margin: 50px;
-  /* background: white; */
   background-attachment: fixed;
   letter-spacing: -1px;
 }
@@ -68,3 +64,37 @@ h6 {
 .item p {
   margin: 0 0 5px 0;
 }
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  body{
+    margin: 0;
+  }
+
+  .item2, .item3 {
+    height: 78vh;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  body{
+    margin: 50px;
+  }
+
+  .item2, .item3 {
+    height: 63vh;
+  }
+}
+
