@@ -6,40 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>CSS Grid repeat Function!</title>
+  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <nav>
+      <div class="logo">
+        <h4>The nav</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+  </nav>
+  
+
   <div class="container">
-    <div class="item item1">1</div>
     <div class="item item2">2</div>
     <div class="item item3">3</div>
     <div class="item item4">4</div>
   </div>
 
-  <style>
-    .container {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .item1, .item4{
-      height: 60px;
-      grid-column: span 4;
-    }
-
-    .item2{
-      grid-column: span 1;
-    }
-
-    .item3{
-      grid-column: span 3;
-    }
-
-    .item2, .item3 {
-    height: 65vh;
-    }
-  </style>
 </body>
 
 </html>
