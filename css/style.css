@@ -170,6 +170,14 @@ nav{
       transform: translateX(100%);
     }
 
+    .nav-links li{
+      opacity: 0;
+    }
+
+    .burger{
+      display: block;
+    }
+
 }
 
 /* Larger than desktop */
